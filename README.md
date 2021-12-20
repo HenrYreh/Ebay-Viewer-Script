@@ -1,2 +1,2 @@
 # Ebay-Viewer-Script
-A simple basic script to increase ebay listing views.
+A simple basic script to increase ebay listing views using python request library.
