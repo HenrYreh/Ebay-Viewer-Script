@@ -16,10 +16,10 @@ def view(link,amount):                                                  #view fu
     for x in range(amount):                                             #send GET Requests to link until amount is met.
         response = requests.get(url=link,headers=headers)
         if response.ok == True:
-            print(f"View Success.")
+            print(f"View Success.[{response.status_code}]")
             success = success + 1
         else:
-            print(f"View failed.")
+            print(f"View failed.[{response.status_code}]")
             failed = failed + 1
         time.sleep(delay)
 
